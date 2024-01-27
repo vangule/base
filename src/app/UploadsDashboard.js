@@ -3,7 +3,6 @@ import useSampleData from '@/app/hooks/useSampleData'
 import React, { useState } from 'react'
 import Dropdown from './common/Dropdown';
 import Tooltip from './common/Tooltip';
-import Link from 'next/link';
 
 const MoreTags = ({ data = [] }) => {
     const [isHovered, setIsHovered] = useState(false);
@@ -38,7 +37,7 @@ const UploadsDashboard = () => {
     const sortFirstFiveElement = (data || []).slice(0, 5);
 
   return (
-    <div>
+    <div class="mx-6">
         <div class="font-semibold text-2xl mb-8">Uploads</div>
         <div class="bg-white-2 px-4 pt-4 pb-2 mb-4 rounded-lg">
             <div class="flex justify-between px-4 pb-2 w-full">
@@ -77,7 +76,6 @@ const UploadsDashboard = () => {
                     </div>
                     )
                 })}
-               
         </div>
     </div>
   )

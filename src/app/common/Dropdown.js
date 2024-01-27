@@ -12,7 +12,7 @@ const Dropdown = ({ data = [] }) => {
   };
 
   return (
-    <div class="relative inline-block mb-80 bg-white w-36">
+    <div class="relative inline-block bg-white w-36">
       <div class="py-1 px-4 border border-solid border-gray-4 rounded-md cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
         <div class="flex items-center justify-center">
             {selectedItem ? <div class="text-sm">{selectedItem}</div>:  <div class="text-sm">Select Tag</div>}

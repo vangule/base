@@ -21,14 +21,14 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         {pathname !== '/' ? 
           <div class="flex bg-off-white w-full h-screen">
-            <div class="basis-1/4 bg-white pt-12 pl-12">
+            <div class="basis-1/5 bg-white pt-12 pl-12">
                 <div class="flex items-center">
                     <Image src={baseLogo} alt="base logo" width={40} height={40} class="mr-4" />
                     <div class="text-black-2 text-2xl font-semibold">Base</div>
                 </div>
               <Navigation />
             </div>
-            <div class="basis-3/4 pt-10 px-10 overflow-y-auto">
+            <div class="basis-4/5 pt-10 px-10 overflow-y-auto">
               {children}
             </div>
           </div>

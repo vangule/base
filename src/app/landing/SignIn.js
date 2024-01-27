@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useRouter } from 'next/navigation';
 import googleLogo from '../../../public/images/google-logo.svg';
 import appleLogo from '../../../public/images/apple-logo.svg';
@@ -10,9 +10,7 @@ import { useForm, Controller } from 'react-hook-form';
 const SignIn = () => {
   const router = useRouter();
 
-  console.log(router, 'router');
-
-  const { register, control, handleSubmit, formState : { errors } } = useForm({
+  const { control, handleSubmit, formState : { errors } } = useForm({
     defaultValues : {
       email : '',
       password: ''
@@ -20,8 +18,8 @@ const SignIn = () => {
   });
 
   const onSubmit = (data) => {
-    router.push('/uploads')
-  }
+    router.push('/upload');
+  };
 
   return (
     <div class="basis-1/2 flex items-center ml-20">

@@ -22,7 +22,7 @@ const FileUploader = () => {
 
   return (
     <div class="flex justify-center mt-24 mb-20">
-        <div className='flex flex-col bg-white w-5/12 rounded-md px-4 py-4'>
+        <div className='flex flex-col bg-white w-6/12 rounded-md px-4 py-4'>
         {fileUrl ? 
             <div class="flex flex-col items-center border-dotted border-2 rounded-md border-grey-1 px-16 py-24">
                 <Image src={excelSheetIcon} width={50} height={50} alt='excel' class="mb-1" />
@@ -47,7 +47,7 @@ const FileUploader = () => {
                     }}
                 />
             </label>}
-            <div class={`flex mt-4 bg-blue-2 py-2 rounded-lg text-white items-center justify-center
+            <div class={`flex mt-4 bg-blue-2 py-3 rounded-lg text-white items-center justify-center
               ${fileUrl ? 'pointer' : 'cursor-not-allowed'} ${fileUrl ? 'opacity-100' : 'opacity-40' }`} role='button'>
                 <Image src={uploadIcon} alt="upload icon" width={20} height={20} class="mr-4" />
                 <div class="text-sm font-semibold">Upload</div>
