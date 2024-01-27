@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
                 </div>
               <Navigation />
             </div>
-            <div class="basis-3/4 pt-10 px-10">
+            <div class="basis-3/4 pt-10 px-10 overflow-y-auto">
               {children}
             </div>
           </div>

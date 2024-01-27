@@ -14,28 +14,28 @@ const useSampleData = () => {
           "links": "merriam-webster.com",
           "prefix": "8oUTDyz",
           "select_tags": ['Technology', 'Fashion', 'Food', 'Travel', 'Sports', 'Music', 'Art', 'Health', 'Education', 'Finance'],
-          "selected_tags": []
+          "selected_tags": ['Fashion', 'Art']
         },
         {
           "id": 3,
           "links": "newyorker.com",
           "prefix": "Z9i2o9o",
           "select_tags": ['Technology', 'Fashion', 'Food', 'Travel', 'Sports', 'Music', 'Art', 'Health', 'Education', 'Finance'],
-          "selected_tags": []
+          "selected_tags": ['Travel']
         },
         {
           "id": 4,
           "links": "angelfire.com",
           "prefix": "pW44f49",
           "select_tags": ['Technology', 'Fashion', 'Food', 'Travel', 'Sports', 'Music', 'Art', 'Health', 'Education', 'Finance'],
-          "selected_tags": []
+          "selected_tags": ['Food','Travel','Music','Health', 'Finance', 'Education']
         },
         {
           "id": 5,
           "links": "rambler.ru",
           "prefix": "w1vDJvP",
           "select_tags": ['Technology', 'Fashion', 'Food', 'Travel', 'Sports', 'Music', 'Art', 'Health', 'Education', 'Finance'],
-          "selected_tags": []
+          "selected_tags": ['Education']
         },
         {
           "id": 6,
