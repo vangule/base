@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import uploadIcon from '../../../../public/images/upload-icon.svg';
-import excelSheetIcon from '../../../../public/images/excel-logo.svg';
+import uploadIcon from '../../public/images/upload-icon.svg';
+import excelSheetIcon from '../../public/images/excel-logo.svg';
 import Image from 'next/image';
 
 const FileUploader = () => {

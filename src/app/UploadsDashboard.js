@@ -1,4 +1,4 @@
-import { HEADER_ELEMENTS } from '@/app/constants';
+import { HEADER_ELEMENTS } from '@/app/constants/uploads-config';
 import useSampleData from '@/app/hooks/useSampleData'
 import React from 'react'
 
