@@ -22,12 +22,12 @@ const LandingPage = () => {
           height:'100vh'
         }}
         >
-          <div style={{ width:'80px', height:'80px', background :'#fff', borderRadius:'100%', display:'flex', justifyContent:'center', alignItems:'center', marginLeft:'50px'}}>
+          <div style={{ width:'70px', height:'70px', background :'#fff', borderRadius:'100%', display:'flex', justifyContent:'center', alignItems:'center', marginLeft:'50px'}}>
             <Image
               src={brandLogo}
               alt="logo"
-              width={80}
-              height={80}
+              width={70}
+              height={70}
             />
           </div>
 

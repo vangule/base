@@ -1,5 +1,5 @@
-import LandingPage from "./component/LandingPage";
+import UploadPage from "./component/UploadPage";
 
 export default function Home() {
-  return <LandingPage />
+  return <UploadPage />
 }
