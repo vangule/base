@@ -8,9 +8,9 @@ import { SOCIAL_HANDLES } from '@/app/constants/social-handles-config';
 
 const LandingPage = () => {
   return (
-    <div class="flex bg-off-white">
+    <div class="sm:flex bg-off-white">
       <div 
-        class="basis-1/2 flex flex-col justify-between pt-16 pb-16"
+        class="basis-1/2 flex flex-col justify-between pt-16 pb-16 sm:flex hidden"
         style={{
           backgroundImage: `url(${backgroundImage.src})`,
           backgroundPosition: "center",
@@ -41,7 +41,7 @@ const LandingPage = () => {
             )})}
         </div>
     </div>
-    
+
     <SignIn />
   </div>
   )

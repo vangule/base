@@ -21,8 +21,8 @@ const FileUploader = () => {
     };
 
   return (
-    <div class="flex justify-center mt-24 mb-20">
-        <div className='flex flex-col bg-white w-6/12 rounded-md px-4 py-4'>
+    <div class="flex justify-center mt-24 mb-20 w-full">
+        <div className='flex flex-col bg-white sm:w-6/12 w-full rounded-md px-4 py-4'>
         {fileUrl ? 
             <div class="flex flex-col items-center border-dotted border-2 rounded-md border-grey-1 px-16 py-24">
                 <Image src={excelSheetIcon} width={50} height={50} alt='excel' class="mb-1" />

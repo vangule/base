@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { NAVS } from '@/app/constants/navigation-config';
 import { useRouter, usePathname } from 'next/navigation';
 
-const Navigation = () => {
+const Navigation = ({ menuOpened = false, setMenuOpened = () => {} }) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -13,11 +13,12 @@ const Navigation = () => {
 
   const hanldeRedirection = (title) => {
     router.push(`/${title}`);
-    setActiveTab(title)
+    setActiveTab(title);
+    setMenuOpened(false);
   };
 
   return (
-    <div class="mt-10">
+    <div class={`${!menuOpened && 'hidden'} sm:flex sm:flex-col mt-10 `}>
         {((NAVS || []).map((item) => {
             const { title = '', icon = '', key = '' } = item || {};
 

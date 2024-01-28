@@ -14,7 +14,7 @@ const Upload = () => {
             <div class="text-black-2 text-2xl font-semibold">
                 Upload CSV
             </div>
-            <div class="flex items-center">
+            <div class="sm:flex items-center hidden">
                 <Image src={notificationImg} alt="notification img" width={25} height={25} class="mr-6" />
                 <Image src={profileImg} alt="profile img" width={40} height={40} />
             </div>

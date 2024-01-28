@@ -2,20 +2,27 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 import downArrow from '../../../public/images/down-arrow.svg';
 
-const Dropdown = ({ data = [] }) => {
+const Dropdown = ({ data = [], newTags, setNewTags }) => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleItemClick = (item) => {
-    setSelectedItem(item);
+    const isItemPresent = newTags.filter((itm) => itm === item);
+
+    if(isItemPresent.length <= 0){
+      setSelectedItem(item);
+      setNewTags((prev) => [...prev, item]);
+    }else{
+      window.alert(`${item} is already selected`);
+    }
     setIsOpen(false);
   };
 
   return (
-    <div class="relative inline-block bg-white w-36">
+    <div class="relative inline-block bg-white w-16 sm:w-36">
       <div class="py-1 px-4 border border-solid border-gray-4 rounded-md cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
         <div class="flex items-center justify-center">
-            {selectedItem ? <div class="text-sm">{selectedItem}</div>:  <div class="text-sm">Select Tag</div>}
+            {selectedItem ? <div class="text-xs sm:text-sm">{selectedItem}</div> : <div class="text-xs sm:text-sm">Select Tag</div>}
             <Image src={downArrow} alt="arrow" width={30} height={30} />
         </div>
       </div>
