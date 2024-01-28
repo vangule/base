@@ -8,7 +8,6 @@ import Image from "next/image";
 import baseLogo from '../../public/images/base-logo.svg';
 import Header from "./common/Header";
 import { useState } from "react";
-import Topbar from "./common/TopBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,8 +16,6 @@ export default function RootLayout({ children }) {
 
   const pathname = usePathname();
 
-  console.log(pathname, 'pathname2');
-  
   return (
     <html lang="en">
       <head>
